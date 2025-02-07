@@ -112,6 +112,12 @@ DevInit이란 이름에는 개발자(Developer)의 시작(Init)이라는 의미�
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 ![Spring Securiey](https://img.shields.io/badge/springsecurity-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
+![JPA](https://img.shields.io/badge/jpa-6DB33F?style=for-the-badge&logo=jpa&logoColor=white)
+![QUERYDSL](https://img.shields.io/badge/queryDSL-6DB33F?style=for-the-badge&logo=queryDSL&logoColor=white)
+![AMAZONS3](https://img.shields.io/badge/amazons3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
+![JWT](https://img.shields.io/badge/jsonwebtokens-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![STOMP](https://img.shields.io/badge/STOMP-000000?style=for-the-badge&logo=null&logoColor=white)
+
 
 </div>
 
