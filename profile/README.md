@@ -136,6 +136,8 @@ DevInit이란 이름에는 개발자(Developer)의 시작(Init)이라는 의미�
 
 </div>
 
+## 🗂 ERD
+![devinit (3)](https://github.com/user-attachments/assets/2d584c32-f1f2-4971-a2d0-09585cec062c)
 
 
 ## 📝 커밋 메시지 컨벤션
