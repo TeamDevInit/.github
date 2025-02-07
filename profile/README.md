@@ -172,6 +172,243 @@ src/
 └── utils/         # 유틸리티 함수
 ```
 
+## 📁 백엔드 프로젝트 구조
+
+```
+main
+├── java
+│   └── com
+│       └── team3
+│           └── devinit_back
+│               ├── DevinitBackApplication.java
+│               ├── board
+│               │   ├── controller
+│               │   │   ├── BoardController.java
+│               │   │   ├── CategoryController.java
+│               │   │   └── TagController.java
+│               │   ├── dto
+│               │   │   ├── BoardDetailResponseDto.java
+│               │   │   ├── BoardRequestDto.java
+│               │   │   ├── BoardResponseDto.java
+│               │   │   └── TagResponseDto.java
+│               │   ├── entity
+│               │   │   ├── Board.java
+│               │   │   ├── Category.java
+│               │   │   ├── Recommendation.java
+│               │   │   ├── Tag.java
+│               │   │   └── TagBoard.java
+│               │   ├── init
+│               │   │   ├── CategoryInitializer.java
+│               │   │   └── TagInitializer.java
+│               │   ├── repository
+│               │   │   ├── BoardRepository.java
+│               │   │   ├── CategoryRepository.java
+│               │   │   ├── RecommendationRepository.java
+│               │   │   └── TagRepository.java
+│               │   └── service
+│               │       ├── BoardService.java
+│               │       ├── CategoryService.java
+│               │       └── TagService.java
+│               ├── comment
+│               │   ├── controller
+│               │   │   └── CommentController.java
+│               │   ├── dto
+│               │   │   ├── CommentRequestDto.java
+│               │   │   └── CommentResponseDto.java
+│               │   ├── entity
+│               │   │   └── Comment.java
+│               │   ├── repository
+│               │   │   └── CommentRepository.java
+│               │   └── service
+│               │       └── CommentService.java
+│               ├── follow
+│               │   ├── controller
+│               │   │   └── FollowController.java
+│               │   ├── dto
+│               │   │   └── FollowCountResponse.java
+│               │   ├── entity
+│               │   │   └── Follow.java
+│               │   ├── repository
+│               │   │   └── FollowRepository.java
+│               │   └── service
+│               │       └── FollowService.java
+│               ├── global
+│               │   ├── amazonS3
+│               │   │   ├── controller
+│               │   │   │   └── S3Controller.java
+│               │   │   └── service
+│               │   │       └── S3Service.java
+│               │   ├── aop
+│               │   │   └── LogAspect.java
+│               │   ├── common
+│               │   │   ├── AbstractResumeService.java
+│               │   │   └── BaseEntity.java
+│               │   ├── config
+│               │   │   ├── AmazonS3Config.java
+│               │   │   ├── CorsMvcConfig.java
+│               │   │   ├── QuerydslConfig.java
+│               │   │   ├── RedisConfig.java
+│               │   │   ├── SecurityConfig.java
+│               │   │   ├── SwaggerConfig.java
+│               │   │   └── WebSocketConfig.java
+│               │   └── exception
+│               │       ├── CustomException.java
+│               │       ├── ErrorCode.java
+│               │       └── GlobalExceptionHandler.java
+│               ├── hub
+│               │   ├── controller
+│               │   │   └── HubController.java
+│               │   ├── dto
+│               │   │   └── HubProfileResponseDto.java
+│               │   ├── repository
+│               │   │   ├── HubCustomRepository.java
+│               │   │   ├── HubCustomRepositoryImpl.java
+│               │   │   └── HubRepository.java
+│               │   └── service
+│               │       └── HubService.java
+│               ├── member
+│               │   ├── controller
+│               │   │   ├── MemberController.java
+│               │   │   └── ReissueController.java
+│               │   ├── dto
+│               │   │   ├── CustomOAuth2User.java
+│               │   │   ├── DailyBoardCountDto.java
+│               │   │   ├── GithubResponse.java
+│               │   │   ├── MemberDto.java
+│               │   │   ├── NaverResponse.java
+│               │   │   └── OAuth2Response.java
+│               │   ├── entity
+│               │   │   ├── DailyBoardCount.java
+│               │   │   ├── Member.java
+│               │   │   ├── NicknameAdjective.java
+│               │   │   ├── NicknameNoun.java
+│               │   │   └── RefreshEntity.java
+│               │   ├── jwt
+│               │   │   ├── JWTFilter.java
+│               │   │   └── JWTUtil.java
+│               │   ├── oauth2
+│               │   │   ├── CustomFailureHandler.java
+│               │   │   ├── CustomLogoutFilter.java
+│               │   │   ├── CustomSuccessHandler.java
+│               │   │   └── OAuth2ResponseFactory.java
+│               │   ├── repository
+│               │   │   ├── DailyBoardCountRepository.java
+│               │   │   ├── MemberRepository.java
+│               │   │   ├── NicknameAdjectiveRepository.java
+│               │   │   ├── NicknameNounRepository.java
+│               │   │   └── RefreshRepository.java
+│               │   └── service
+│               │       ├── CustomOAuth2UserService.java
+│               │       ├── MemberService.java
+│               │       ├── RandomNickname.java
+│               │       └── RedisTokenService.java
+│               ├── profile
+│               │   ├── controller
+│               │   │   └── ProfileController.java
+│               │   ├── dto
+│               │   │   ├── BoardSummaryResponse.java
+│               │   │   ├── ProfileDetailResponse.java
+│               │   │   ├── ProfileImageResponseDto.java
+│               │   │   ├── ProfileResponse.java
+│               │   │   └── ProfileUpdateRequest.java
+│               │   ├── entity
+│               │   │   └── Profile.java
+│               │   ├── repository
+│               │   │   └── ProfileRepository.java
+│               │   └── service
+│               │       └── ProfileService.java
+│               ├── resume
+│               │   ├── controller
+│               │   │   ├── ActivityController.java
+│               │   │   ├── EducationController.java
+│               │   │   ├── ExperienceController.java
+│               │   │   ├── InformationController.java
+│               │   │   ├── LanguageController.java
+│               │   │   ├── ProjectController.java
+│               │   │   ├── ResumeController.java
+│               │   │   ├── SkillController.java
+│               │   │   └── SkillTagController.java
+│               │   ├── dto
+│               │   │   ├── ActivityRequestDto.java
+│               │   │   ├── ActivityResponseDto.java
+│               │   │   ├── EducationRequestDto.java
+│               │   │   ├── EducationResponseDto.java
+│               │   │   ├── ExperienceRequestDto.java
+│               │   │   ├── ExperienceResponseDto.java
+│               │   │   ├── InformationRequestDto.java
+│               │   │   ├── InformationResponseDto.java
+│               │   │   ├── LanguageRequestDto.java
+│               │   │   ├── LanguageResponseDto.java
+│               │   │   ├── ProjectRequestDto.java
+│               │   │   ├── ProjectResponseDto.java
+│               │   │   ├── ResumeRequestDto.java
+│               │   │   ├── ResumeResponseDto.java
+│               │   │   ├── SkillRequestDto.java
+│               │   │   ├── SkillResponseDto.java
+│               │   │   └── SkillTagResponseDto.java
+│               │   ├── entity
+│               │   │   ├── Activity.java
+│               │   │   ├── Education.java
+│               │   │   ├── Experience.java
+│               │   │   ├── Information.java
+│               │   │   ├── Language.java
+│               │   │   ├── Project.java
+│               │   │   ├── Resume.java
+│               │   │   ├── Skill.java
+│               │   │   └── SkillTag.java
+│               │   ├── repository
+│               │   │   ├── ActivityRepository.java
+│               │   │   ├── EducationRepository.java
+│               │   │   ├── ExperienceRepository.java
+│               │   │   ├── InformationRepository.java
+│               │   │   ├── LanguageRepository.java
+│               │   │   ├── ProjectRepository.java
+│               │   │   ├── ResumeRepository.java
+│               │   │   ├── SkillRepository.java
+│               │   │   └── SkillTagRepository.java
+│               │   └── service
+│               │       ├── ActivityService.java
+│               │       ├── EducationService.java
+│               │       ├── ExperienceService.java
+│               │       ├── InformationService.java
+│               │       ├── LanguageService.java
+│               │       ├── ProjectService.java
+│               │       ├── ResumeService.java
+│               │       ├── SkillService.java
+│               │       └── SkillTagService.java
+│               └── websocket
+│                   ├── controller
+│                   │   ├── ChatController.java
+│                   │   └── ChatRoomController.java
+│                   ├── dto
+│                   │   ├── ChatMessageDto.java
+│                   │   ├── ChatRoomDetailDto.java
+│                   │   ├── ChatRoomListDto.java
+│                   │   └── ChatRoomRequestDto.java
+│                   ├── entity
+│                   │   ├── ChatMessage.java
+│                   │   ├── ChatPart.java
+│                   │   ├── ChatPartId.java
+│                   │   └── ChatRoom.java
+│                   ├── handler
+│                   │   └── StompHandler.java
+│                   ├── repository
+│                   │   ├── ChatMessageRepository.java
+│                   │   ├── ChatPartRepository.java
+│                   │   ├── ChatRoomRepository.java
+│                   │   ├── RedisChatMessageRepository.java
+│                   │   └── RedisChatRoomRepository.java
+│                   └── service
+│                       ├── ChatBatchService.java
+│                       ├── ChatRoomService.java
+│                       ├── ChatService.java
+│                       └── RedisSubscriber.java
+└── resources
+    ├── application-dev.yml
+    ├── application-prod.yml
+    └── application.yml
+```
+
 ---
 <div align="center">
   
