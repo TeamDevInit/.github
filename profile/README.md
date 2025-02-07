@@ -139,8 +139,13 @@ DevInit이란 이름에는 개발자(Developer)의 시작(Init)이라는 의미�
 ## 🗂 ERD
 ![devinit (3)](https://github.com/user-attachments/assets/2d584c32-f1f2-4971-a2d0-09585cec062c)
 
-## 🎨 WIREFRAME
+## 🎨 WIRE FRAME
+
 👉 https://www.figma.com/design/Rd6KQMMBOgj4wo1GZG1sKh/DevInit?node-id=0-1&p=f&t=vLnJyybdHWRWDzEo-0
+
+## ARCHITECTURE
+
+![ARCITECTURE](https://cdn.discordapp.com/attachments/1326759250592268348/1337244708442738839/image.png?ex=67a6bdaf&is=67a56c2f&hm=289a685a6f592e71617a7ce31d09b6d029ada04a406fb8a4df72846d02c451a5&)
 
 ## 📝 커밋 메시지 컨벤션
 ```
