@@ -111,6 +111,7 @@ DevInit이란 이름에는 개발자(Developer)의 시작(Init)이라는 의미�
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Spring Securiey](https://img.shields.io/badge/springsecurity-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
 
 </div>
 
