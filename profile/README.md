@@ -9,7 +9,7 @@
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 
 
-[![Deploy](https://img.shields.io/badge/DevInit-배포_링크-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](http://34.64.72.48/)
+[![Deploy](https://img.shields.io/badge/DevInit-배포_링크-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](http://www.devinit.shop/)
 
 </div>
 
